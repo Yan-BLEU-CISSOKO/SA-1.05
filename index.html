@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/cover24.jpg" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Sélections Musicales De Yan</title>
+</head>
+<body>
+    <h1>Sélections Musicales De Yan</h1>
+    <!-- Section pour afficher les musiques -->
+    <div class="liste-musiques"></div>
+
+    <!-- Section pour le formulaire d'ajout de musique -->
+    <div class="musique-formulaire">
+        <h2>Proposer une Musique</h2>
+        <form id="ajout-musique">
+            <label for="titre">Titre : <span class="obligatoire">*</span></label>
+            <input type="text" id="titre" name="titre" required>
+
+            <label for="description">Description : <span class="obligatoire">*</span></label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="artiste">Artiste : <span class="obligatoire">*</span></label>
+            <input type="text" id="artiste" name="artiste" required>
+
+            <label for="lienaudio">Lien audio : <span class="obligatoire">*</span></label>
+            <input type="url" id="lienaudio" name="lienaudio" required>
+
+            <label for="image">Image de couverture : <span class="obligatoire">*</span></label>
+            <input type="url" id="image" name="image" required>
+
+            <label for="email">Votre email <span class="format"> (ex: monmail@domaine.com)</span><span class="obligatoire">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="bouton-envoi">Ajouter la Musique</button>
+            <button class="clear bouton-effacer">Effacer les propositions</button>
+        </form>
+    </div>
+
+    <!-- Footer et popup-->
+<div class="popup-visible" id="popupMentions">
+    <div class="mention">
+    <img src="img/croix.png" alt="fermer" class="fermer">
+    <h3>IMAGES</h3>
+    <p><a class="link" href="https://i1.sndcdn.com/artworks-nOvyMNt1KBxH-0-t1080x1080.jpg">Homestudio</a></p>
+    <p><a class="link" href="https://cdn-images.dzcdn.net/images/cover/be3bc6ccbca02be2701661ecf73ac85d/1900x1900-000000-80-0-0.jpg">Drive me crazy</a></p>
+    <p><a class="link" href="https://cdn-images.dzcdn.net/images/cover/335db41564cb33510b3ae0677892cf38/0x1900-000000-80-0-0.jpg">Madvillain</a></p>
+    <p><a class="link" href="https://cdn-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/1900x1900-000000-80-0-0.jpg">See you again</a></p>
+    <p><a class="link" href="https://cdn-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/1900x1900-000000-80-0-0.jpg">N95</a></p>
+    <p><a class="link" href="https://static.vecteezy.com/system/resources/thumbnails/018/930/575/small_2x/youtube-logo-youtube-icon-transparent-free-png.png">Icon YouTube</a></p>
+    <p><a class="link" href="https://static.vecteezy.com/system/resources/previews/016/716/458/non_2x/spotify-icon-free-png.png">Icon Spotify</a></p>
+    <p><a class="link" href="https://companieslogo.com/img/orig/DEEZR.PA-dbdcf2cf.png?t=1721547851">Icon Deezer</a></p>
+    <br>
+    <h3>ÉDITION</h3>
+    <p>Conception graphique et Développement : Yan Bleu-Cissoko</p>
+    </div>
+</div>
+
+    <footer>
+        <p id="openPopup">Mentions légales</p>
+    </footer>  
+
+    <script src="script.js"></script>
+</body>
+</html>

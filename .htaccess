@@ -1,0 +1,5 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^musique/?$ /musique/index.html [L,R=301]
